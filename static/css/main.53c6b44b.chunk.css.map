@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,cAAgB,wBAA4B,CAC5C,KACE,mBACF,CACA,QACE,oBAAqB,CACrB,YACF","file":"main.53c6b44b.chunk.css","sourcesContent":[".navbar-right { margin-right: 0px !important}\n.log {\n  margin: 5px 20px 0 0;\n}\n.videos {\n  border: 1px solid red;\n  height:400px;\n}\n"]}
