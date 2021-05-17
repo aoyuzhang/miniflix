@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Upload from './components/Upload';
+import Display from './components/Display';
+import Callback from './components/Callback';
 import reportWebVitals from './reportWebVitals';
+import { Router, Route, browserHistory } from 'react-router';
+import { requireAuth } from './utils/AuthService';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Root = () => {
+  return (
+    <div className="container">
+      <Router history={browserHistory}>
+        <Route path="/" component={Display}/>
+        <Route path="/upload" component={Upload} onEnter={requireAuth} />
+        <Route path="/callback" component={Callback} />
+      </Router>
+    </div>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<Root />, document.getElementById('root'));
+reportWebVitals()
