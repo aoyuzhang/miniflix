@@ -2,7 +2,7 @@
   "name": "miniflix",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://aoyuzhang.github.io/react-miniflix",
+  "homepage": "http://aoyuzhang.github.io/miniflix",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
